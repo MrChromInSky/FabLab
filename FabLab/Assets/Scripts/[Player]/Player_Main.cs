@@ -40,8 +40,14 @@ public class Player_Main : MonoBehaviour
     public bool canRotate = true; //If player can rotate//
     public bool canWalk = true; //If player can walk //
     public bool canRun = true;  //If player can run//
+    public bool canUseTorch = true;
 
     #endregion Possibilities
+
+    #region Values
+    [Header("Values")]
+    public float TorchEnergy; //For display
+    #endregion Values
 
     #endregion Variables
 
