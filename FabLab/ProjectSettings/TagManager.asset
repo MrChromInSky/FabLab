@@ -3,14 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hear
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
+  - Interactable
+  - Hear
   - 
   - 
   - 
@@ -33,10 +36,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Object
+  - Wall
   m_SortingLayers:
   - name: Default
     uniqueID: 0
