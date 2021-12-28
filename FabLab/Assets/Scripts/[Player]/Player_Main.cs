@@ -49,6 +49,8 @@ public class Player_Main : MonoBehaviour
     public float TorchEnergy; //For display
     #endregion Values
 
+    public bool haveAKey = false;
+
     #endregion Variables
 
 

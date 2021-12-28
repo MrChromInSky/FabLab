@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6075848483269701201}
   - component: {fileID: 6075848483269701165}
   - component: {fileID: 368014705}
+  - component: {fileID: 670933828}
   m_Layer: 3
   m_Name: '[Player]'
   m_TagString: Player
@@ -121,7 +122,7 @@ MonoBehaviour:
   - {x: -0.5040928, y: -0.09406221, z: 0}
   m_ShapePathHash: -1320426445
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1256
+  m_InstanceId: -8024
 --- !u!114 &6075848483269701164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +159,7 @@ MonoBehaviour:
   canRun: 1
   canUseTorch: 1
   TorchEnergy: 0
+  haveAKey: 0
 --- !u!114 &6075848483269701203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +222,48 @@ MonoBehaviour:
   torch: {fileID: 6075848484711672653}
   maxEnergy: 100
   actualEnergy: 0
-  batteryUsagespeed: 8
+  batteryUsagespeed: 1
+--- !u!114 &670933828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075848483269701205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 0
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.334
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2.04
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0.079
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 24
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 3
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &6075848483322311916
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +365,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -54
+  m_SortingOrder: 8
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 0.39658082, b: 0, a: 1}
   m_FlipX: 0
@@ -468,9 +511,9 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.7
-  m_Color: {r: 1, g: 0.7763496, b: 0.4669811, a: 1}
+  m_Color: {r: 0.9528302, g: 0.78517944, b: 0.5528213, a: 1}
   m_Intensity: 6
-  m_LightVolumeOpacity: 0.2
+  m_LightVolumeOpacity: 0.005
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
@@ -478,9 +521,9 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensity: 1
-  m_PointLightInnerAngle: 12
-  m_PointLightOuterAngle: 30
-  m_PointLightInnerRadius: 6
+  m_PointLightInnerAngle: 20
+  m_PointLightOuterAngle: 90
+  m_PointLightInnerRadius: 7
   m_PointLightOuterRadius: 15
   m_PointLightDistance: 3
   m_PointLightQuality: 1
